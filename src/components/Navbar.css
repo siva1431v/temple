@@ -1,26 +1,52 @@
 .navbar {
-  background-color: #6a1b1a;
-  color: white;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #ff7e33, #ff9933); /* Sunset orange to deep saffron */
   position: sticky;
   top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
 }
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-.nav-links a:hover {
-  color: #ffd54f;
-}
-.logo {
+
+.navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: #fff5e6; /* Soft cream hover */
 }

@@ -1,21 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
+import "./About.css";
 
-export default function About() {
+const About = () => {
   return (
-    <motion.section
-      id="about"
-      className="about"
-      initial={{ x: -100, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
-    >
-      <h2>About Us</h2>
+    <section id="about" className="about">
+      <h2>About Our Temple</h2>
       <p>
-        Our temple is a place of devotion, culture, and community. We host
-        various spiritual and cultural programs throughout the year.
+        Our temple is a place of worship, community, and peace. It has been
+        serving devotees for decades with daily rituals, special events, and
+        spiritual programs.
       </p>
-    </motion.section>
+    </section>
   );
-}
+};
+
+export default About;

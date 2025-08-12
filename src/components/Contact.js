@@ -1,14 +1,15 @@
 import React from "react";
 import "./Contact.css";
 
-function Contact() {
+const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2>Contact Us</h2>
-      <p>Email: info@angalamman.com</p>
-      <p>Phone: +91 98765 43210</p>
+      <p>📍 Address: 123 Temple Street, City</p>
+      <p>📞 Phone: +91 9876543210</p>
+      <p>🌐 Website: www.templewebsite.com</p>
     </section>
   );
-}
+};
 
 export default Contact;

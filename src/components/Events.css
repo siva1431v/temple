@@ -1,13 +1,22 @@
 .events {
-  padding: 50px 20px;
-  background-color: #ffe0b2;
   text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
 }
 
-.event-card {
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.events h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events li {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #555;
 }
