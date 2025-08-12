@@ -1,0 +1,12 @@
+.gallery {
+  padding: 50px 20px;
+  background: #fff3e0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
